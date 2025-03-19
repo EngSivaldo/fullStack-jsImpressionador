@@ -1,0 +1,39 @@
+1 Classe Personagem (Character) 
+Esta será a classe base. A classe Personagem deve ter os seguintes atributos: 
+● nome (Nome do personagem) 
+● energia (Energia do personagem, pode ser usada para atacar ou realizar outras ações) 
+● poderAtaque (Poder de ataque) 
+● poderDefesa (Poder de defesa) 
+Além disso, a classe Personagem deve ter um método para atacar: 
+● atacar(alvo): Este método deve subtrair a energia do personagem alvo com base na 
+diferença entre o poder de ataque do personagem atual e o poder de defesa do alvo. 
+
+
+2 Classe Soldado (Soldier) 
+A classe Soldado deve herdar de Personagem e adicionar a seguinte propriedade: 
+● poderEscudo (Escudo de proteção adicional). 
+Além disso, o soldado deve sobrescrever o método atacar para calcular o dano com base na 
+diferença entre o poder de ataque e o poder de defesa, considerando também o poder de 
+escudo do soldado. 
+
+3 Classe Engenheiro (Engineer) 
+A classe Engenheiro herda de Personagem e adiciona um atributo: 
+● habilidadeConserto (Habilidade de conserto, que pode ser usada para restaurar a 
+energia dos outros personagens). 
+O Engenheiro também deve sobrescrever o método atacar, mas a diferença é que, ao invés 
+de causar dano, ele deve usar sua habilidadeConserto para restaurar a energia de um aliado. 
+O valor de cura será proporcional à habilidadeConserto do engenheiro. 
+
+4 Classe Piloto (Pilot) 
+A classe Piloto herda de Personagem e adiciona o atributo: 
+● habilidadePiloto (Habilidade de manobras em naves). 
+O Piloto deve sobrescrever o método atacar para aplicar um dano maior com base na 
+habilidade de manobra da nave. O dano causado será uma combinação do poder de ataque e 
+da habilidade de manobra, multiplicada por 1.5. 
+
+5 Classe Médico (Medic) 
+A classe Médico herda de Personagem e adiciona um atributo: 
+● habilidadeCura (Habilidade de cura). 
+O Médico deve sobrescrever o método atacar, mas, ao invés de causar dano, ele deve usar a 
+habilidadeCura para aumentar a energia de um aliado. O valor da cura será proporcional à 
+habilidadeCura.
