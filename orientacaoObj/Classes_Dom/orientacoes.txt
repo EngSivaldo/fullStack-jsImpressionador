@@ -1,0 +1,37 @@
+Desafio: Pizzaria Interativa com Classes no DOM 
+Você foi contratado por uma pizzaria para desenvolver um formulário 
+interativo para pedidos online, e para isso, deverá criar um conjunto 
+de classes em JavaScript que interagem diretamente com o DOM. Seguindo 
+as instruções abaixo, o objetivo é organizar a criação dos elementos 
+da página usando orientação a objetos. 
+
+Requisitos do Desafio 
+
+Crie no mínimo 4 classes diferentes, com as seguintes especificações: 
+
+1. Classe Component: 
+○ Representa um elemento genérico do DOM. 
+○ Deve possuir um atributo privado que armazena a referência 
+ao elemento do DOM. 
+○ Método build: Cria o elemento DOM associado (chamado no 
+construtor e reutilizável). 
+○ Método render: Adiciona o elemento na página. 
+○ Método para acessar a referência ao elemento armazenado. 
+
+2. Classe Input: 
+○ Subclasse de Component. 
+○ Representa campos de entrada de dados no formulário. 
+○ No construtor, você pode definir o tipo do input (como 
+"text", "number", "checkbox", etc.). 
+
+3. Classe Label: 
+○ Subclasse de Component. 
+○ Representa etiquetas associadas a campos do formulário. 
+○ No construtor, você deve indicar o conteúdo textual do label 
+como o primeiro parâmetro. 
+
+4. Classe Form: 
+○ Subclasse de Component. 
+○ Representa um formulário para pedidos. 
+○ Deve possuir um método para adicionar elementos filhos (como 
+inputs e labels). 
