@@ -6,7 +6,7 @@
 // ○ Deve possuir um método chamado adicionarComentario, que recebe uma
 // instância da classe Comment e a adiciona à lista de comentários.
 
-class Post {
+export class Post {
   constructor(titulo, conteudo, autor) {
     this.titulo = titulo;
     this.conteudo = conteudo;

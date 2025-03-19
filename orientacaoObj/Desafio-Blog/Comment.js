@@ -1,10 +1,11 @@
-// 2. Classe Comment: 
-// ○ Deve representar um comentário de um post. 
-// ○ Deve conter os atributos: autor do comentário e conteúdo. 
+// 2. Classe Comment:
+// ○ Deve representar um comentário de um post.
+// ○ Deve conter os atributos: autor do comentário e conteúdo.
 
-class Comment {
-    constructor(autor, conteudo) {
-        this.autor = autor;
-        this.conteudo = conteudo;
-    }
+export class Comment {
+  constructor(autor, conteudo) {
+    this.autor = autor;
+    this.conteudo = conteudo;
+  }
 }
+

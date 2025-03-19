@@ -5,15 +5,18 @@
 // instância da classe Post, associando o autor à publicação e adicionando o post
 // à lista do autor.
 
-class Author {
+import { Post } from "./Post.js";
+
+export class Author {
   constructor(nome) {
     this.nome = nome;
     this.posts = []; // Lista de posts criado pelo autor
   }
 
   criarPost(titulo, conteudo) {
-    const novoPost = new Post(titulo, conteudo, this); // O autor é asspciado ao post
+    const novoPost = new Post(titulo, conteudo, this); // O autor é associado ao post
     this.posts.push(novoPost); // Adicionar o post a lista do autor
+    return novoPost;
   }
 
   listarPosts() {
